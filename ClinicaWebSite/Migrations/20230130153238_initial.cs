@@ -13,7 +13,8 @@ namespace ClinicaWebSite.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nombre = table.Column<string>(nullable: false),
-                    Apellido = table.Column<string>(nullable: false)
+                    Apellido = table.Column<string>(nullable: false),
+                    Matricula = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
