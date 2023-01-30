@@ -1,12 +1,9 @@
-﻿@model IEnumerable<OperaWebSite.Models.Opera>
-<!DOCTYPE html>
+﻿@{
+    ViewData["Title"] = "Index Opera";
+}
+@model IEnumerable<OperaWebSite.Models.Opera>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
+    <h1>OPERAS</h1>
     @Html.ActionLink("Nuevo","Create","Opera")
     <table>
         <tr>
@@ -26,5 +23,4 @@
             </tr>
         }
     </table>
-</body>
-</html>
+

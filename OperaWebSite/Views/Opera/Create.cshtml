@@ -1,12 +1,8 @@
-﻿@model OperaWebSite.Models.Opera
-<!DOCTYPE html>
+﻿@{
+    ViewData["Title"] = "Create Opera";
+}
+@model OperaWebSite.Models.Opera
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Create</title>
-</head>
-<body>
     <h1>Registrar Opera</h1>
     @using (Html.BeginForm("Create","Opera",FormMethod.Post))
     {
@@ -31,5 +27,4 @@
         @Html.ActionLink("Volver a Index", "Index", "Opera")
 
     }
-</body>
-</html>
+

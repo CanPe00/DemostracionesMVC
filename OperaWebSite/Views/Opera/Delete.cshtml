@@ -1,12 +1,8 @@
-﻿@model OperaWebSite.Models.Opera
-<!DOCTYPE html>
+﻿@{
+    ViewData["Title"] = "Delete Opera";
+}
+@model OperaWebSite.Models.Opera
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Delete</title>
-</head>
-<body>
     <h2>@Model.Title</h2>
     <p>¿Desea eliminar esta opera?</p>
 
@@ -25,7 +21,3 @@
         @Html.ActionLink("Volver a Index","Index","Opera")
 
     }
-
-   
-</body>
-</html>
