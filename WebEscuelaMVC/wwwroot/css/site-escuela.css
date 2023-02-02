@@ -1,0 +1,43 @@
+﻿*{
+    margin:5px;
+}
+body {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5,auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas: "header header header header header"
+        "menu content content content content "
+        "menu content content content content "
+        "menu content content content content "
+        "footer footer footer footer footer";
+    overflow: scroll;
+}
+
+#header {
+    background-color: forestgreen;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 32px;
+    padding: 2px;
+    grid-area: header;
+}
+
+#menu {
+    background-color: lightblue;
+    /*color:lightcyan;*/
+    grid-area: menu;
+}
+
+#Content {
+    margin-left: 10px;
+    grid-area: content;
+}
+
+#footer {
+    text-align: center;
+    color: blue;
+    clear: both;
+    grid-area: footer;
+}

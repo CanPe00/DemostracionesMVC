@@ -1,12 +1,7 @@
 ﻿@model IEnumerable<WebEscuelaMVC.Models.Aula>
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
+@{
+    ViewData["Title"] = "Index Aula";
+}
     <h1>AULAS</h1>
     @Html.ActionLink("Nueva Aula","Create","Aula")
     <table>
@@ -30,5 +25,4 @@
     </table>
     <br />
     @Html.ActionLink("Volver","Index","Home")
-</body>
-</html>
+

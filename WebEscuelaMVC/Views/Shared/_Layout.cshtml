@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/css/site-escuela.css" rel="stylesheet" type="text/css" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div id="Top">
+        <h1>Escuela Web Site</h1>
+    </div>
+    <div id="menu">
+        <ul>
+            <li>@Html.ActionLink("Home","Index","Home")</li>
+            <li>@Html.ActionLink("Aula","Index","Aula")</li>
+        </ul>
+    </div>
+    <div id="Content">
+        @RenderBody()
+    </div>
+    <div id="footer">
+        <p>
+            info@Escuela.com
+        </p>
+    </div>
+</body>
+</html>

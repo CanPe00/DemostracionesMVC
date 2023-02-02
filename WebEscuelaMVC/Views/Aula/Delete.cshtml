@@ -1,12 +1,7 @@
 ﻿@model WebEscuelaMVC.Models.Aula
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Delete</title>
-</head>
-<body>
+@{
+    ViewData["Title"] = "Delete Aula";
+}
     <h1>Aula Número: @Model.Numero</h1>
     @using (Html.BeginForm("Delete","Aula",FormMethod.Post))
     {
@@ -20,5 +15,4 @@
         <br />
         @Html.ActionLink("Volver","Index","Aula")
     }
-</body>
-</html>
+
