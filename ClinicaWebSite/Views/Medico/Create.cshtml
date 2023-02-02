@@ -1,12 +1,8 @@
 ﻿@model ClinicaWebSite.Models.Medico
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Create</title>
-</head>
-<body>
+@{
+    ViewData["Title"] = "Create Medico";
+}
     <h1>Registrar nuevo médico</h1>
     @using (Html.BeginForm("Create","Medico",FormMethod.Post))
     {
@@ -29,5 +25,4 @@
         <br />
         @Html.ActionLink("Volver","Index","Medico")
     }
-</body>
-</html>
+

@@ -1,12 +1,7 @@
 ﻿@model ClinicaWebSite.Models.Medico
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Delete</title>
-</head>
-<body>
+@{
+    ViewData["Title"] = "Delete Medico";
+}
     <h1>@Model.Nombre @Model.Apellido</h1>
   
 
@@ -23,5 +18,3 @@
         @Html.ActionLink("Volver","Index","Medico")
 
     }
-</body>
-</html>

@@ -1,12 +1,8 @@
 ﻿@model ClinicaWebSite.Models.Medico
-<!DOCTYPE html>
+@{
+    ViewData["Title"] = "Details Medico";
+}
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Details</title>
-</head>
-<body>
     <h1>Detalle de Médico</h1>
   
     <p>
@@ -24,5 +20,3 @@
     </p>
 
     @Html.ActionLink("Volver","Index","Medico")
-</body>
-</html>

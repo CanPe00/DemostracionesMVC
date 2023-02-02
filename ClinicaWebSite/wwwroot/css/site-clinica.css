@@ -1,0 +1,37 @@
+﻿body {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5,auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas: "top top top top top"
+        "sideBarOpcional content content content sideBarOpcional2"
+        "sideBarOpcional content content content sideBarOpcional2"
+        "sideBarOpcional content content content sideBarOpcional2"
+        "footer footer footer footer footer";
+    overflow:scroll;
+}
+
+#Top {
+    grid-area: top;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#SideBarOpcional {
+    grid-area: sideBarOpcional;
+}
+
+#SideBarOpcional2 {
+    grid-area: sideBarOpcional2;
+}
+
+#Content {
+    grid-area: content;
+}
+
+#footer {
+    text-align: center;
+    color: blue;
+    clear: both;
+    grid-area: footer;
+}

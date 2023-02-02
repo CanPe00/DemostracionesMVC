@@ -1,12 +1,7 @@
 ﻿@model IEnumerable<ClinicaWebSite.Models.Medico>
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
+@{
+    ViewData["Title"] = "Index Medico";
+}
     <h1>MEDICOS:</h1>
     @Html.ActionLink("Nuevo","Create","Medico")
     <table>
@@ -32,5 +27,3 @@
     </table>
     <br />
     @Html.ActionLink("Volver","Index","Home")
-</body>
-</html>

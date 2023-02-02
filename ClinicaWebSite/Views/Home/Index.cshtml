@@ -1,14 +1,20 @@
-﻿<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
+﻿@{
+    ViewData["Title"] = "Index Home";
+}
     <h2>@ViewBag.Nombre</h2>
     <h3>@ViewBag.Fecha</h3>
 
     @Html.ActionLink("Ir a Index Medicos","Index","Medico")
-</body>
-</html>
+
+    @section SideBarOpcional{
+
+        <p>Imágenes</p>
+        <img alt="imagen aleatoria" src="https://picsum.photos/500/500?random">
+        <img alt="imagen aleatoria" src="https://picsum.photos/500/500?random">
+        <img alt="imagen aleatoria" src="https://picsum.photos/500/500?random">
+        <img alt="imagen aleatoria" src="https://picsum.photos/500/500?random">
+   
+
+
+        }
+

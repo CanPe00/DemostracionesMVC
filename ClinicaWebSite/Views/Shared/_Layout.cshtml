@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/site-clinica.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="Top">
+        <h1>Clinica Web Site</h1>
+        @Html.ActionLink("Home","Index","Home")
+        @Html.ActionLink("Medico","Index","Medico")
+    </div>
+
+    <div id="SideBarOpcional">
+        @if (IsSectionDefined("SideBarOpcional"))
+        {
+            @RenderSection("SideBarOpcional")
+        }
+        else
+        {
+            <h2>Esta aplicacion efectua el CRUD de Medicos</h2>
+        }
+    </div>
+
+    <div id="Content">
+        @RenderBody()
+    </div>
+
+    <div id="SideBarOpcional2">
+        @if (IsSectionDefined("SideBarOpcional2"))
+        {
+            @RenderSection("SideBarOpcional2")
+        }
+        else
+        {
+            <h2>Esta aplicacion efectua el CRUD de Medicos</h2>
+        }
+    </div>
+
+    <div id="footer">
+        <p>
+            info@Clinica.com
+        </p>
+    </div>
+
+</body>
+</html>
